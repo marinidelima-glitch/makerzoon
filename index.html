@@ -1,1 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Zona Carnívora | Plantas Carnívoras e Makerzoon 3D</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7f3;
+            color: #1f2a24;
+        }
+
+        header {
+            background: #183d2b;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 7%;
+            background: linear-gradient(
+                135deg,
+                #e9f3e8,
+                #ffffff
+            );
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 78px);
+            line-height: 1;
+            margin-bottom: 25px;
+            color: #183d2b;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #526157;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button-primary {
+            background: #183d2b;
+            color: white;
+        }
+
+        .button-secondary {
+            border: 2px solid #183d2b;
+            color: #183d2b;
+        }
+
+        .section {
+            padding: 80px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #68756c;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+        }
+
+        .card h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #68756c;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            color: #183d2b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .makerzoon {
+            background: #182d3d;
+            color: white;
+        }
+
+        .makerzoon .section-title p,
+        .makerzoon .card p {
+            color: #c5d0d7;
+        }
+
+        .makerzoon .card {
+            background: #223e50;
+        }
+
+        .makerzoon .card a {
+            color: #8ed1b0;
+        }
+
+        footer {
+            background: #10271c;
+            color: #cbd5ce;
+            text-align: center;
+            padding: 35px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                min-height: 65vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌿 Zona Carnívora</div>
+
+    <nav>
+        <a href="#plantas">Plantas</a>
+        <a href="#garnivoras">Garnívoras</a>
+        <a href="#makerzoon">Makerzoon</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            O mundo das plantas que comem animais.
+        </h1>
+
+        <p>
+            Plantas carnívoras, cultivo, conhecimento e produtos
+            para quem é apaixonado por esse universo.
+        </p>
+
+        <div class="buttons">
+
+            <a class="button button-primary" href="#plantas">
+                Conheça as plantas
+            </a>
+
+            <a class="button button-secondary" href="#makerzoon">
+                Conheça a Makerzoon 3D
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="plantas">
+
+    <div class="section-title">
+
+        <h2>🌱 Plantas Carnívoras</h2>
+
+        <p>
+            Conheça e encontre diferentes espécies para cultivo.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Dionaea</h3>
+
+            <p>
+                A famosa planta carnívora conhecida por suas armadilhas
+                de fechamento rápido.
+            </p>
+
+            <a href="#">Ver plantas →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Nepenthes</h3>
+
+            <p>
+                Plantas de jarro com estruturas especializadas
+                para capturar suas presas.
+            </p>
+
+            <a href="#">Ver plantas →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Drosera</h3>
+
+            <p>
+                Pequenas plantas cobertas por tentáculos glandulares
+                que produzem mucilagem.
+            </p>
+
+            <a href="#">Ver plantas →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Pinguicula</h3>
+
+            <p>
+                Folhas pegajosas e delicadas que escondem uma
+                incrível estratégia de captura.
+            </p>
+
+            <a href="#">Ver plantas →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="garnivoras">
+
+    <div class="section-title">
+
+        <h2>📚 Garnívoras</h2>
+
+        <p>
+            Conhecimento para cultivar melhor.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Livros e materiais</h3>
+
+            <p>
+                Conteúdos produzidos para ajudar você a entender
+                e cultivar plantas carnívoras.
+            </p>
+
+            <a href="#">Conhecer Garnívoras →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Manuais de cultivo</h3>
+
+            <p>
+                Informações práticas sobre espécies, substratos,
+                iluminação, água e cultivo.
+            </p>
+
+            <a href="#">Ver materiais →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section makerzoon" id="makerzoon">
+
+    <div class="section-title">
+
+        <h2>⚙️ Makerzoon 3D</h2>
+
+        <p>
+            Ideias que saem da tela e ganham forma.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Organização</h3>
+
+            <p>
+                Peças funcionais e personalizadas para organizar
+                seu espaço.
+            </p>
+
+            <a href="#">Ver produtos →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Decoração</h3>
+
+            <p>
+                Objetos decorativos produzidos em impressão 3D.
+            </p>
+
+            <a href="#">Ver produtos →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Presentes</h3>
+
+            <p>
+                Peças diferentes para presentear e colecionar.
+            </p>
+
+            <a href="#">Ver produtos →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Personalizados</h3>
+
+            <p>
+                Você imagina. A Makerzoon transforma em uma peça.
+            </p>
+
+            <a href="#">Fazer orçamento →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="contato">
+
+    <div class="section-title">
+
+        <h2>Entre em contato</h2>
+
+        <p>
+            Quer comprar uma planta, material ou peça personalizada?
+        </p>
+
+    </div>
+
+    <div style="text-align:center;">
+
+        <a class="button button-primary" href="#">
+            Falar pelo WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Zona Carnívora • Garnívoras • Makerzoon 3D
+    </p>
+
+</footer>
+
+</body>
+</html>
